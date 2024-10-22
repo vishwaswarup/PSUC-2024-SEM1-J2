@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+    int n1, n2;
+    printf("enter number 1: ");
+    scanf("%d", &n1);
+    printf("enter number 2: ");
+    scanf("%d",&n2);
+    int choice;
+    printf("enter 1 for addition\n");
+    printf("enter 2 for subtraction\n");
+    printf("enter 3 for multiplication\n");
+    printf("enter 4 for division\n");
+    scanf("%d",&choice);
+    if (choice==1){
+        printf("the sum of the two numbers is %d\n", n1 + n2);
+    }
+    else if (choice==2){
+        printf("the subtraction of the first number from the second number is %d\n", n1-n2);
+    }
+    else if (choice==3){
+        printf("the multiplication of the two numbers is %d\n", n1*n2);
+    }
+    else if (choice==4){
+        printf("the division of the first number from the second number is %d\n", n1/n2);
+    }
+    return 0;
+}
